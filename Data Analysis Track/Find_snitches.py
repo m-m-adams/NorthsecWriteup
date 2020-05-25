@@ -39,7 +39,7 @@ def add_decoded(dataframe):
 
 #%%
 
-con = sqlite3.connect('leak/sev_high.sqlite')
+con = sqlite3.connect('4-Find_The_Snich/sev_high.sqlite')
 secret = pd.read_sql('SELECT * FROM secret',con)
 sev_high_studid_mac = pd.read_sql('SELECT * FROM student_id_mac_addr',con)
 
