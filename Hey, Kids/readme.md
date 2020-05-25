@@ -30,7 +30,7 @@ At this point I jumped off the deep end, and accepted that most of my weekend wa
 ```3728	f6622b3c-33aa-4b42-bbe7-d44cafb8b1ae```
 
 Had this failed, the next step would have been trying polynomial combinations - I omitted it for time, but it would almost certainly increase the accuracy of the model.
-###Challenge 3
+### Challenge 3
 
 The next download was an APK, with the storyline that it was a tracking app that had been defaced by hackers. My first step was running strings on it. As it turns out, there are an unbelieveable amount of strings in an android app, and it gave me 12000 hits. Some more research turned up that android apps contain a "string table", with the user defined strings in it. 
 
