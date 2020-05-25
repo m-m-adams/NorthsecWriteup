@@ -8,13 +8,12 @@ def generate_keys(init):
         value = (value | mask) +1
         yield value
 
-n = 1<<30
+n = 1<<25
 i=0
-for start in range(0, n, n//8):
-    a = generate_keys(start)
-    print('round', i)
-    i+=1
-    print('starting at', hex(start | 0x0101010101010101))
-    for key in a:
-        last = hex(key)
-    print ('ended at...', last)
+
+a = generate_keys(0)
+for key in a:
+    print(hex(key))
+
+
+

@@ -39,11 +39,11 @@ def add_decoded(dataframe):
 
 #%%
 
-con = sqlite3.connect('4-Find_The_Snich/sev_high.sqlite')
+con = sqlite3.connect('sev_high.sqlite')
 secret = pd.read_sql('SELECT * FROM secret',con)
 sev_high_studid_mac = pd.read_sql('SELECT * FROM student_id_mac_addr',con)
-
-wifi = pd.read_csv('leak/wifi_logs', sep='\t')
+con.close()
+wifi = pd.read_csv('wifi_logs', sep='\t')
 
 snitches = pd.read_csv('snitches/snitches_logs.csv', sep='\t')
 severity_high = pd.read_csv(r'.\part 2\severity_high_students.csv')
