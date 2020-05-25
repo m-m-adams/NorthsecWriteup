@@ -1,8 +1,8 @@
-##Data Analysis and Machine Learning
+## Data Analysis and Machine Learning
 
 This folder contains both the datasets and my solution code for the data analysis track from Northsec 2020.  
 
-###Challenge 1
+### Challenge 1
 
 This scenario started with a 2GB database of students, with a note on the challenge text saying "it's about corruption in the school system", a note about finding a girl named Liz, and a question asking which one is severity high. From here we decided we either needed the most corrupt student or the most corrupt school.   
 
@@ -15,7 +15,7 @@ From here we can see that there are both donations and grade fields. The next ob
 
 After this the correlation was much more obviou - one school had a correlation of 0.8, the others hovered around 0.5. Within that school was a single student named elizebeth. The student id wasn't accepted as a flag, but the school id was, and granted the first point in this track.
 
-###Challenge 2
+### Challenge 2
 
 The next download was a collection of students from severity high, with all the same fields except for "docile". The challenge was to identify the 3 "known agitators" in this dataset.  The obvious solution was to run a machine learning algorithm on the labelled dataset from challenge 1 to predict the labels on challenge 2. This is in the file  "sev_high_agitators.py" - jupyter notebooks are fine for basic exploration, but are not the best tool for running ML stuff. Instead I used spyder, which has similar (optional) cell based execution along with the full IDE and variable explorer.  
 
@@ -39,7 +39,7 @@ The next download was an APK, with the storyline that it was a tracking app that
 This only had 2000 strings. This table contained a flag, but it was worth 0 points and just said "you didn't think it would be that easy". It also contained a bunch of base64 strings that decoded to questions and answers. I ran the APK using genymotion, and it popped up a series of questions - by using the encoded answers I was able to get through them at it gave me another flag.
 Lastly, looking at the cert.rsa file within hte APK gives the publihser as Trolling1.0, and the rot13 flag yetz-01wx46912476x304v5y1yu71uy87285u0
 
-###Challenge 4.
+### Challenge 4.
 
 The next dataset download was a file snitches_log and a password protected zip. I had no good ideas, so asked the team for help. We ended up setting john the ripper to run on it but never got a password... it turned out to be severityhigh123. There's a lesson here about not using default dictionaries.
 
