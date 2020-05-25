@@ -19,7 +19,7 @@ It will do this repeatedly until reaching the end of the input password, but it'
 
 Once we find those two keys, they can be combined, percent encoded, and submitted to the form to change the grade. To work this solution takes about 2^(n) space and log(n)/(n) time, where n is the number of hashes you generate to match.  
 
-My code to do this is in MITM.go. It fills your ram with hash/key pairs, then goes into the decryption stage and keeps going until it finds a match. With 8 threads and 32gb of ram it takes about 25 minutes. Unfortunately, I hadn't worked out the counter increments during Northsec, so the code was massively less efficient and couldn't finish in time.
+My code to do this is in MITM.go. It fills your ram with hash/key pairs, then goes into the decryption stage and keeps going until it finds a match. With 8 threads and 32gb of ram it takes about 25 minutes. 
 
 ## Counter increments
 
