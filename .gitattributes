@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-"DES Cracking Track/ChallengeCode/"* linguist-vendored
+*.c linguist-vendored
 *.ipynb linguist-vendored
